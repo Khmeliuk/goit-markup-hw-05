@@ -50,8 +50,7 @@ ul {
 
 /* header */
 .header {
-  /* padding-top: 24px;
-    padding-bottom: 25px; */
+  
   border-bottom: 1px solid var(--border-solid);
 }
 .header-nav {
@@ -104,6 +103,9 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list .link.current {
@@ -131,7 +133,9 @@ ul {
  margin-left: auto;
   display: flex;
   fill: var(--secondary-color);
-  
+  transition-property: color,fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container .contact + .contact {
   margin-left: 50px;
@@ -213,7 +217,9 @@ ul {
   display: block;
   margin: auto;
   padding: 6px 32px;
-
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   border-radius: 4px;
 }
@@ -319,6 +325,7 @@ ul {
   margin-left: 30px;
 }
 
+
 /* our team */
 
 .ourtaem-section {
@@ -369,6 +376,9 @@ ul {
   display: flex;
   align-content: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-team-social+.our-team-social{
   margin-left: 10px;
@@ -381,7 +391,6 @@ ul {
 }
 .our-team-social:hover{
 display: flex;
-fill: var(--banner-color);
 background-color: var(--accent-color);
 border-radius: 50%;
 align-items: center;
@@ -390,13 +399,14 @@ justify-content: center;
 .link-icon{
   margin: auto;
   fill: var(--icon-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-team-social:hover .link-icon{
    fill: var(--banner-color);
 }
-/* .link-icon:hover{
-  
-} */
+
 
 /* clients */
 
@@ -416,6 +426,9 @@ justify-content: center;
  display: block;
  padding: 16px 32px;
  fill: #AFB1B8;
+ transition-property: border,fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company + .company{
   margin-left: 30px;
@@ -456,6 +469,9 @@ justify-content: center;
   text-decoration: none;
 
   display: block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_mail {
@@ -506,9 +522,12 @@ margin-bottom: 20px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
- border: none;
-   background-color: rgba(255, 255, 255, 0.1);
-padding: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link{
   margin-right: 10px;
@@ -540,6 +559,9 @@ padding: 0;
   border: none;
 
   display: block;
+  transition-property: color,background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-butom:hover,
