@@ -33,6 +33,9 @@ ul {
   padding: 0;
   margin: 0;
 }
+img {
+  display: block;
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -109,6 +112,8 @@ ul {
   content: "";
   margin-top: 28px;
   color: var(--accent-color);
+  padding: 0;
+  width: 100%;
 }
 
 .nav-list .link:hover,
@@ -606,6 +611,30 @@ ul {
   margin-left: 30px;
   margin-top: 30px;
 }
+.cart-info {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: var(--banner-color);
+  background: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  padding: 63px 24px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translatey(100%);
+
+  transition-property: transform(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cart-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.cards:hover .cart-info {
+  transform: translatey(0%);
+}
 
 /* modal */
 .backdrop {
@@ -638,15 +667,19 @@ ul {
   background-repeat: no-repeat;
   position: absolute;
   background-size: 11px, 11px;
+  border-radius: 50%;
   margin: 0;
   padding: 0;
   background-position: center;
-  /* background-size: cover; */
   background-color: transparent;
   top: 8px;
   right: 8px;
 }
 .backdrop.js-hidden {
   opacity: o;
+  pointer-events: none;
+}
+.backdrop.is-hidden {
+  opacity: 0;
   pointer-events: none;
 }
