@@ -108,12 +108,13 @@ img {
 
 .current::after {
   display: flex;
-  border: 2px solid var(--accent-color);
+  border-bottom: 4px solid var(--accent-color);
   content: "";
   margin-top: 28px;
   color: var(--accent-color);
   padding: 0;
   width: 100%;
+  border-radius: 2px;
 }
 
 .nav-list .link:hover,
@@ -320,7 +321,7 @@ img {
 }
 .we-do-text {
   position: absolute;
-  top: 75%;
+  top: 76%;
   right: 0;
   min-width: 370px;
   min-height: 70px;
